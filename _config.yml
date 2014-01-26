@@ -1,5 +1,7 @@
 safe: true
-source: https://github.com/bengle/personal-wiki.git
-destination: ~/workspace/personal-wiki/
+source: "https://github.com/bengle/personal-wiki.git"
+destination: "/"
 lsi: false
 pygments: true
+baseurl : "http://bengle.github.io/personal-wiki/"
+posts : "_posts/"

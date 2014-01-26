@@ -1,53 +1,14 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Bengle的个人博客
+---
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bengle's personal wiki : 小前端一枚,翻译" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Bengle's personal wiki</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/bengle/personal-wiki">View on GitHub</a>
-
-          <h1 id="project_title">Bengle's personal wiki</h1>
-          <h2 id="project_tagline">小前端一枚,翻译</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/bengle/personal-wiki/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/bengle/personal-wiki/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1><a href="http://xjwsn.blog.163.com/blog/static/127884875201249113546447/">译文：Tips to Comment Your Code </a></h1>
-
-<p>This article was written by José M. Aguilar in Spanish on his excellent blog <a href="http://www.variablenotfound.com/2007/12/13-consejos-para-comentar-tu-cdigo.html">Variable Not Found</a></p>
-
-<p>下面的13条贴士可以告诉我们怎样注释你的源代码可以让它更容易理解和持续维护...</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bengle's personal wiki maintained by <a href="https://github.com/bengle">bengle</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+<h2>文章列表</h2>
+<ul id="J_list">
+　{% for post in site.posts %}
+　　<li style="margin:0;">
+     <h3 style="margin:0;"><a href="{{ site.baseurl }}{{ post.url }}" style="font-size:20px;color:#000;">{{ post.title }}</a>
+        ( {{ post.date | date_to_string }} )</h3>
+    </li>
+　{% endfor %}
+</ul>
