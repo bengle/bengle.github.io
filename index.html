@@ -5,7 +5,7 @@ title: Bengle的个人博客
 
 <h2>文章列表</h2>
 <ul id="J_list">
-	{ paginator.total_posts }
+	{ site.posts.length }
 　{% for post in site.posts %}
 　　<li style="margin:0;">
      <h3 style="margin:0;"><a href="{{ site.baseurl }}{{ post.url }}" style="font-size:20px;color:#000;">{{ post.title }}</a>

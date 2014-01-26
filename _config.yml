@@ -1,7 +1,7 @@
 safe: true
-source: "https://github.com/bengle/personal-wiki.git"
+source: "https://github.com/bengle/bengle.github.io"
 destination: "/"
 lsi: false
 pygments: true
-baseurl : "http://bengle.github.io/personal-wiki/"
+baseurl : "http://bengle.github.io/"
 posts : "_posts/"
