@@ -1,5 +1,5 @@
 safe: true
-source: "https://github.com/bengle/bengle.github.io"
+source: "git@github.com:bengle/bengle.github.io.git"
 destination: "/"
 lsi: false
 pygments: true
