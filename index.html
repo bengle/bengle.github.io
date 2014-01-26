@@ -1,14 +1,60 @@
----
-layout: default
-title: Bengle的个人博客
----
+<!DOCTYPE html>
+<html>
 
-<h2>文章列表</h2>
-<ul id="J_list">
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Bengle&#39;s personal wiki : 小前端一枚,翻译" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Bengle&#39;s personal wiki</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bengle">View on GitHub</a>
+
+          <h1 id="project_title">Bengle&#39;s personal wiki</h1>
+          <h2 id="project_tagline">小前端一枚,翻译</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <hr><p>layout: default</p>
+
+<h2>
+<a name="title-bengle%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2" class="anchor" href="#title-bengle%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2"><span class="octicon octicon-link"></span></a>title: Bengle的个人博客</h2>
+
+<h2>
+<a name="%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8" class="anchor" href="#%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8"><span class="octicon octicon-link"></span></a>文章列表</h2>
+
+<ul>
 　{% for post in site.posts %}
-　　<li style="margin:0;">
-     <h3 style="margin:0;"><a href="{{ site.baseurl }}{{ post.url }}" style="font-size:20px;color:#000;">{{ post.title }}</a>
+　　<li>
+     <h3>
+<a name="-posttitle-----------postdate--date_to_string--" class="anchor" href="#-posttitle-----------postdate--date_to_string--"><span class="octicon octicon-link"></span></a><a href="%7B%7B%20site.baseurl%20%7D%7D%7B%7B%20post.url%20%7D%7D">{{ post.title }}</a>
         ( {{ post.date | date_to_string }} )</h3>
     </li>
 　{% endfor %}
 </ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
