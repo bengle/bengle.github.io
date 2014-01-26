@@ -1,0 +1,5 @@
+safe: true
+source: https://github.com/bengle/personal-wiki.git
+destination: ~/workspace/personal-wiki/
+lsi: false
+pygments: true
