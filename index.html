@@ -7,8 +7,10 @@ title: Bengle的个人博客
 <ul id="J_list">
 　{% for post in site.posts %}
 　　<li style="margin:0;">
-     <h3 style="margin:0;"><a href="{{ site.baseurl }}{{ post.url }}" style="font-size:20px;color:#000;">{{ post.title }}</a>
-        ( {{ post.date | date_to_string }} )</h3>
+     <h3 style="margin:0;">
+     	<a href="{{ site.baseurl }}{{ post.url }}" style="font-size:20px;color:#000;">{{ post.title }}</a>
+        ( {{ post.date | date_to_string }} ) {{ site.posts.length }}
+     </h3>
     </li>
 　{% endfor %}
 </ul>
